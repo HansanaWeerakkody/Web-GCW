@@ -1,0 +1,89 @@
+/* Team Page Specific Styles */
+.team-body {
+  background: url('../assets/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: var(--light-blue);
+  text-align: center;
+}
+
+.team-main {
+  padding: 2rem;
+  min-height: 70vh;
+}
+
+.team-title {
+  font-size: 3rem;
+  color: var(--light-blue);
+  margin-bottom: 2rem;
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-member {
+  text-decoration: none;
+  background-color: var(--light-blue);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-bottom: 1rem;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  background-color: var(--bright-blue);
+}
+
+.member-image {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  color: var(--very-dark-blue);
+  padding: 1rem;
+  padding-bottom: 0.2rem;
+  margin: 0;
+}
+
+.team-member p {
+  color: var(--dark-blue);
+  padding: 0 1rem 1rem;
+  margin: 0;
+}
+
+/* Hide member-info initially */
+
+.team-member {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Position the info absolutely over the member card */
+.member-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.95); /* Light background */
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  padding: 1rem;
+  text-align: left;
+}
+
+/* Show the info on hover only */
+.team-member:hover .member-info {
+  opacity: 1;
+  transform: translateY(0%);
+}

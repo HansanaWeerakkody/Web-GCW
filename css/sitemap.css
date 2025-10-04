@@ -1,0 +1,141 @@
+/* SITEMAP PAGE SPECIFIC STYLES */
+.sitemap-main {
+    padding: 2rem;
+    background: url('../assets/background.jpg') no-repeat center center fixed;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.sitemap-main h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 3rem;
+    color: var(--light-blue);
+}
+
+.sitemap-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    position: relative;
+    background-color: rgba(5, 25, 35, 0.8);
+    padding: 2rem 4rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Node Styling */
+.node {
+    background-color: rgba(6, 63, 154, 0.8);
+    color: var(--light-blue);
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    margin: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.node a {
+    color: var(--light-blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.node:hover {
+    transform: scale(1.05);
+    background-color: var(--very-dark-blue);
+}
+
+/* Hierarchy Levels */
+.level-1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.level-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.level-3 {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+/* Special Node Types */
+.root-node-1 {
+    background-color: var(--bright-blue);
+    width: 200px;
+    margin: 0 auto;
+}
+
+.root-node-1 a {
+    color: var(--light-blue);
+    font-weight: 700;
+}
+
+.sub-node {
+    background-color: var(--medium-blue);
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    margin: 0.5rem auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-node {
+    background-color: var(--very-dark-blue);
+    width: 200px;
+    margin: 0 auto; 
+}
+
+.support-node {
+    background-color: var(--dark-blue);
+    max-width: fit-content;
+}
+
+.editer-validation-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.sub-pages {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.support-node:hover {
+    background-color: #00273e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .level-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .level-2, .level-3 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .node::after,
+    .node::before {
+        display: none;
+    }
+}

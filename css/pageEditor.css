@@ -1,0 +1,172 @@
+/* Content Page Specific Styles */
+.content-body {
+  background: url('../assets/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: var(--light-blue);
+  text-align: center;
+}
+
+.pageeditor-main {
+  padding: 2rem;
+  min-height: 70vh;
+}
+
+/* Main Heading */
+.pageeditor-title {
+  font-size: 3rem;
+  color: var(--light-blue);
+  margin-bottom: 1rem;
+}
+
+/* Name role and work */
+.pageeditor-role {
+  background-color: rgba(5, 25, 35, 0.8);
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+  margin: 1rem auto;
+  max-width: 75%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Content Sections */
+.content-section {
+  background-color: rgba(5, 25, 35, 0.8);
+  padding: 2rem 4rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 75%;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  color: var(--light-blue);
+  margin-bottom: 1rem;
+  text-align: center
+}
+
+.content-section h3 {
+  font-size: 1.5rem;
+  color: var(--light-blue);
+  margin-bottom: 1rem;
+}
+
+
+.content-section h4 {
+  font-size: 1.32rem;
+  color: var(--light-blue);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.content-section h5 {
+  font-size: 1.15rem;
+  color: var(--light-blue);
+  margin-bottom: 1rem;
+}
+
+.content-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--light-blue);
+  margin-bottom: 1rem;
+}
+
+/* Go to Feedback Page Button Styles */
+.goto-page-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--bright-blue);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.goto-page-button:hover {
+  background-color: var(--medium-blue);
+  transform: scale(1.02);
+}
+
+
+
+/* Styled List for Key Points */
+.styled-list {
+  list-style-type: disc;
+  margin-left: 2rem;
+  color: var(--light-blue);
+}
+
+.styled-list li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+.styled-list li strong {
+  color: var(--bright-blue);
+  font-weight: bold;
+}
+
+/* Threats Section Images */
+.threats-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.threat-image {
+  flex: 1;
+  text-align: center;
+}
+
+.threat-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.image-caption {
+  font-size: 0.9rem;
+  color: var(--light-blue);
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+/* Practices Section Images */
+.practices-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.practice-image {
+  flex: 1;
+  text-align: center;
+}
+
+.practice-image img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.goto-validation {
+  font-size: 1.2rem;
+  background-color: var(--bright-blue);
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1rem;
+}
